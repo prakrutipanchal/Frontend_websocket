@@ -3,7 +3,7 @@ import { io } from 'socket.io-client';
 
 function App() {
   useEffect(() => {
-    const socket = io('https://socketio-backend.onrender.com'); // Replace with your Render/Railway URL// Replace with your backend URL after deployment
+    const socket = io('https://backend-websocket-dh15.onrender.com'); // Replace with your Render/Railway URL// Replace with your backend URL after deployment
 
     socket.on('welcome', (msg) => {
       console.log('Server says:', msg); // Check browser console
